@@ -1,1 +1,61 @@
 // Add your custom CSS here.
+// APP GIFTS
+#app-blow_gummies{}
+#app-blow_gummies .freebie-rule{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    justify-content: flex-start;
+    margin-bottom:2rem
+}
+#app-blow_gummies .freebie-rule .freebie-item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    width:130px;
+}
+#app-blow_gummies .freebie-rule-name{}
+#app-blow_gummies .freebie-rule .freebie-item img{max-height:80px}
+#app-blow_gummies .freebie-rule .freebie-item label{margin:0;font-size:12px}
+#app-blow_gummies .freebie-rule .freebie-item button{
+    font-size:12px;
+    border:1px solid;
+    border-color: #212529;
+    width:105px;
+}
+#app-blow_gummies .freebie-rule .freebie-item button.active{background:green;border-color:green;color:#fff}
+#app-blow_gummies .freebie-rule .freebie-item select{
+    width: 100%;
+    border-radius: 3px;
+    padding: 3px 5px;
+}
+#app-blow_gummies .freebie-rule .freebie-item select.readonly{
+    background: #f2f2f2;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+#app-blow_gummies .freebie-rule .freebie-item.already_selected{
+    cursor: not-allowed;
+    filter: grayscale(1);
+}
+#app-blow_gummies .freebie-rule .freebie-item.already_selected > span:first-child{
+    position: absolute;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    top: 0;
+    border-radius: 3px 3px 0 0;
+}
+#app-blow_gummies .freebie-rule .freebie-item.already_selected *{
+    pointer-events:none;
+}
+#app-blow_gummies .freebie-rule .freebie-item.already_selected select,
+#app-blow_gummies .freebie-rule .freebie-item.already_selected button{display:none}
