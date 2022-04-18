@@ -27,6 +27,15 @@
     {
       "type": "product-specifications",
       "enabled": true
+    },
+    {
+      "type": "offers-timer",
+      "max_hours": 24,
+      "start": "",
+      "end": "2022-04-19T02:47:26.277Z",
+      "offers": [
+        "624c7ce42e405e04ff241589"
+      ]
     }
   ]
 }
