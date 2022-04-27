@@ -1,28 +1,29 @@
 {
   "assetsByChunkName": {
-    "vendors~app-account~app-confirmation~app-order": "chunk.d1422083e5b9baf62114.js",
-    "vendors~app-account~app-checkout": "chunk.3ca47253cb81d257521f.js",
-    "vendors~app-cart~app-checkout": "chunk.333d4245cba91ce6810c.js",
+    "vendors~app-account~app-confirmation~app-order": "chunk.b4ba0e3c367a202e81aa.js",
+    "vendors~app-account~app-checkout": "chunk.56a7e06c9b0806288739.js",
+    "vendors~app-cart~app-checkout": "chunk.fd33633b293952babc1a.js",
     "admin": [
-      "admin.c3933c691158f8bd0f3b.js",
-      "admin.c3933c691158f8bd0f3b.js.map"
+      "admin.f68b3c948ee424338147.js",
+      "admin.f68b3c948ee424338147.js.map"
     ],
-    "app-account": "chunk.97b7abac7ee0013e24bb.js",
-    "app-cart": "chunk.04a7ead0c880b788405a.js",
-    "app-checkout": "chunk.4720da2b4c2b8e296534.js",
-    "app-confirmation": "chunk.9ceb32ceca0e3475abfb.js",
-    "app-order": "chunk.36eaeb4ab502b2fd894a.js",
+    "app-account": "chunk.7af3ef89a1a1d487ef42.js",
+    "app-cart": "chunk.ab6e14b4f2bd3496f586.js",
+    "app-checkout": "chunk.4533f5543a82f6232707.js",
+    "app-confirmation": "chunk.08472d4355fc91a7e576.js",
+    "app-order": "chunk.8fe61fa34f4e136452ec.js",
     "checkout": [
-      "checkout.e3df4ce8318e2c3d8c72.js",
-      "checkout.e3df4ce8318e2c3d8c72.js.map"
+      "checkout.8b3e4df15747d8f13d50.js",
+      "checkout.8b3e4df15747d8f13d50.js.map"
     ],
     "storefront": [
       "storefront.25f3b671f6671d3a171d.css",
-      "storefront.8f1d4707d83398d5e71b.js",
+      "storefront.ae44f1fc11e7e0042fc1.js",
       "storefront.25f3b671f6671d3a171d.css.map",
-      "storefront.8f1d4707d83398d5e71b.js.map"
+      "storefront.ae44f1fc11e7e0042fc1.js.map"
     ],
-    "vendors~app-cart": "chunk.cd38b133f0a15b1d8953.js",
-    "vendors~app-checkout": "chunk.a3c1514c3c8026f9ca5b.js"
+    "vendors~app-account": "chunk.fec261207b87fabc60fd.js",
+    "vendors~app-cart": "chunk.e025cd2c3282100a067c.js",
+    "vendors~app-checkout": "chunk.afc1a8b087a151358de0.js"
   }
 }
