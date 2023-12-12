@@ -1,6 +1,6 @@
 {
   "title": "Contato",
-  "meta_title": "Contato",
-  "meta_description": "Contato",
-  "body": "### Lorem ipsum dolor sit amet"
+  "meta_title": "Contato - Blow Gummies",
+  "meta_description": "Alguma dúvida, sugestão ou elogio? Fale conosco.",
+  "body": "<div role=\"main\" id=\"fale-conosco-33d789dc803e8bad331a\"></div><script type=\"text/javascript\" src=\"https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js\"></script><script type=\"text/javascript\">new RDStationForms('fale-conosco-33d789dc803e8bad331a-html', 'UA-114913832-1').createForm();</script><p style=\"margin-top: 10px; font-size: 1.5rem\">Você também pode falar com nossa consultoria de vendas clicando abaixo</p><a style=\"font-size: 2rem; padding: 7px; margin-top: 10px; border-radius: 50px; background-color: #25d366\" id=\"whatsapp\" href=\"https://api.whatsapp.com/send/?phone=5521 978958823&text&app_absent=0 \"><span style=\"padding: 10px\"><i style=\"color: #fff\" class=\"fab fa-whatsapp\"></i> <strong style=\"color:#fff\">FALE COM A BLOW</strong></span></a>"
 }

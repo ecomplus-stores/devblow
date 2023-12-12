@@ -1,27 +1,45 @@
 {
   "marketing_stripe": {
-    "text": "Aproveite nossos descontos de até 40%!",
-    "link": "/promotion"
+    "text": "",
+    "link": "https://www.blowgummies.com.br/?utm_source=site&utm_medium=banner&utm_campaign=blowgummies"
   },
   "contacts_stripe": {
+    "phone_wpp": false,
+    "socials": true,
     "pages": [
       {
-        "title": "Sobre nós",
-        "link": "/pages/sobre-nos"
+        "title": "Comprar",
+        "link": "/compre-agora/"
       },
       {
-        "title": "Esta loja é um PWA",
-        "link": "/posts/esta-loja-e-um-pwa"
+        "title": "ZERO AÇUCAR",
+        "link": "/blow-gummies-zero-acucar"
+      },
+      {
+        "title": "Composição",
+        "link": "/pages/ingredientes-que-contem-blow-gummies"
+      },
+      {
+        "title": "Resultados",
+        "link": "/pages/resultados-reais-blow-gummies"
+      },
+      {
+        "title": "Blow Gummies ?",
+        "link": "/pages/por-que-blow-gummies"
+      },
+      {
+        "title": "Colecionáveis",
+        "link": "/colecionaveis"
       }
-    ],
-    "phone_wpp": true,
-    "socials": true
+    ]
   },
   "categories_list": {
     "featured": [],
-    "random": 6,
+    "random": 20,
     "full_width": false
   },
+  "search_input": false,
   "desktop_megamenu": false,
-  "search_input": true
+  "alphabetical_order_submenu": false,
+  "full_width_submenu": false
 }

@@ -1,10 +1,9 @@
 <%
 if (opt.img) {
-  const { width, height } = _.tryImageSize(opt.img, opt)
-  const sources = [{ src: opt.img }]
+  let { width, height } = _.tryImageSize(opt.mobile_img)
+  const sources = [{ src: opt.img, width: 600, height: 600 }]
   if (opt.mobile_img) {
     sources[0].media = '(min-width: 576px)'
-    const { width, height } = _.tryImageSize(opt.mobile_img)
     sources.push({
       src: opt.mobile_img,
       media: '(min-width: 100px)',
@@ -12,6 +11,7 @@ if (opt.img) {
       height
     })
   }
+  console.log(sources)
   sources.forEach(source => {
     if (source.src.endsWith('.webp')) {
       source.type = 'image/webp'
@@ -25,10 +25,13 @@ if (opt.img) {
   %>
 
   <div class="banner">
+    <% if (opt.end && opt.timer) { %>
+      <%- await include('@/sections/inc/timer-banner', { _, opt }) %>
+    <% } %>
     <a
       href="<%= opt.link || 'javascript:;' %>"
       aria-label="<%= opt.alt %>"
-    >
+    > 
       <picture
         <% if (opt.sync_load) { %>
           class="img-fluid"

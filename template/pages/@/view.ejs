@@ -25,6 +25,86 @@
 
   <%- await include('@/json') %>
   <%- await include('@/scripts') %>
+  <script>
+    // banner timer
+window.timerFunction = (endDate, $div) => {
+  let countToDate
+  const timeEnd = new Date(endDate).getTime()
+  const tomorrow = new Date(new Date().getTime() + 86400000).setHours(0, 0, 0, 0)
+  const diffTime = timeEnd - tomorrow
+  if (diffTime > 0) {
+    countToDate = tomorrow
+  } else {
+    countToDate = timeEnd
+  }
+  let previousTimeBetweenDates
+  const timerBanner = setInterval(() => {
+    const currentDate = new Date()
+    const timeBetweenDates = Math.ceil((countToDate - currentDate) / 1000)
+    const correctTimer = timeBetweenDates > 0 ? timeBetweenDates : 0
+    flipAllCards(correctTimer, $div)
+    previousTimeBetweenDates = correctTimer
+    if (correctTimer === 0) {
+      console.log($div)
+      document.getElementById($div).style.display = 'none'
+    }
+  }, 250)
+  const flipAllCards = (time, $div) => {
+    const seconds = time % 60
+    const minutes = Math.floor(time / 60) % 60
+    const hours = Math.floor(time / 3600)
+  
+    flip(document.querySelector(`${$div} [data-hours-tens]`), Math.floor(hours / 10))
+    flip(document.querySelector(`${$div} [data-hours-ones]`), hours % 10)
+    flip(document.querySelector(`${$div} [data-minutes-tens]`), Math.floor(minutes / 10))
+    flip(document.querySelector(`${$div} [data-minutes-ones]`), minutes % 10)
+    flip(document.querySelector(`${$div} [data-seconds-tens]`), Math.floor(seconds / 10))
+    flip(document.querySelector(`${$div} [data-seconds-ones]`), seconds % 10)
+  }
+  const flip = (flipCard, newNumber) => {
+    const topHalf = flipCard.querySelector(".top")
+    const startNumber = parseInt(topHalf.textContent)
+    if (newNumber === startNumber) return
+    const bottomHalf = flipCard.querySelector(".bottom")
+    const topFlip = document.createElement("div")
+    topFlip.classList.add("top-flip")
+    const bottomFlip = document.createElement("div")
+    bottomFlip.classList.add("bottom-flip")
+  
+    top.textContent = startNumber
+    bottomHalf.textContent = startNumber
+    topFlip.textContent = startNumber
+    bottomFlip.textContent = newNumber
+  
+    topFlip.addEventListener("animationstart", e => {
+      topHalf.textContent = newNumber
+    })
+    topFlip.addEventListener("animationend", e => {
+      topFlip.remove()
+    })
+    bottomFlip.addEventListener("animationend", e => {
+      bottomHalf.textContent = newNumber
+      bottomFlip.remove()
+    })
+    flipCard.append(topFlip, bottomFlip)
+  }
+}
+  </script>
+  <% if (_.pageName === 'home') { %>
+    <script>
+      
+   </script>
+                          
+  <% } %>
+  <!-- <script>
+    document.addEventListener('scroll', zopimlaunch);
+    function zopimlaunch () {
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+        $.src='https://v2.zopim.com/?5a43qD3oeIpnWGfgyCRbdvgaw5wJzJEu';z.t=+new Date;$.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+        document.removeEventListener('scroll', zopimlaunch);
+    }
+  </script> -->
+  <script src="//code.jivosite.com/widget/RSK4FwZnDo" async></script>
 </body>
 
 </html>

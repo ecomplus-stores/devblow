@@ -4,14 +4,121 @@
     "text": ""
   },
   "links_1": {
-    "list_pages": true,
-    "title": "Páginas",
-    "list": []
+    "list_pages": false,
+    "title": "Institucional",
+    "list": [
+      {
+        "text": "Responsabilidade Ambiental",
+        "url": "/pages/blow-gummies-responsabilidade-ambiental"
+      },
+      {
+        "text": "Contato",
+        "url": "/pages/contato"
+      },
+      {
+        "text": "Blow Coins",
+        "url": "/pages/blow-coins"
+      },
+      {
+        "text": "Desafio Blow Gummies",
+        "url": "/pages/desafio-blow-gummies"
+      },
+      {
+        "text": "Dúvidas Mais Frequentes",
+        "url": "/pages/duvidas-frequentes"
+      },
+      {
+        "text": "Condições de Entrega",
+        "url": "/pages/entrega"
+      },
+      {
+        "text": "Política de Frete Grátis",
+        "url": "/pages/frete-gratis"
+      },
+      {
+        "text": "Ingredientes Blow Gummies",
+        "url": "/pages/ingredientes-que-contem-blow-gummies"
+      },
+      {
+        "text": "Formas de Pagamento",
+        "url": "/pages/pagamentos"
+      },
+      {
+        "text": "Por Que Blow Gummies?",
+        "url": "/pages/por-que-blow-gummies"
+      },
+      {
+        "text": "Política de Privacidade",
+        "url": "/pages/privacidade"
+      },
+      {
+        "url": "/pages/regulamentos-promocoes-blow-gummies",
+        "text": "Regulamentos"
+      },
+      {
+        "text": "Resultados Reais",
+        "url": "/pages/resultados-reais-blow-gummies"
+      },
+      {
+        "text": "Rastrear Pedidos",
+        "url": "/rastrear"
+      },
+      {
+        "url": "/pages/sobre-nos",
+        "text": "Sobre nós"
+      },
+      {
+        "text": "Trocas e Devoluções",
+        "url": "/pages/trocas"
+      }
+    ]
   },
   "links_2": {
-    "list_categories": true,
-    "title": "Categorias",
-    "list": []
+    "list_categories": false,
+    "title": "Precisa de Ajuda?",
+    "list": [
+      {
+        "text": "Por que Blow Gummies?",
+        "url": "/pages/por-que-blow-gummies"
+      },
+      {
+        "text": "Composição",
+        "url": "/pages/ingredientes-que-contem-blow-gummies"
+      },
+      {
+        "text": "Resultados Reais ",
+        "url": "/pages/resultados-reais-blow-gummies"
+      },
+      {
+        "text": "Dúvidas Frequentes",
+        "url": "/pages/duvidas-frequentes"
+      },
+      {
+        "text": "Trocas e Devoluções",
+        "url": "/pages/trocas"
+      }
+    ]
+  },
+  "links_3": {
+    "title": "Produtos",
+    "list": [
+      {
+        "text": "Tratamento Capilar 60 dias",
+        "url": "/blow-gummies-crescimento-capilar-60-dias-tratamento"
+      },
+      {
+        "text": "Tratamento Capilar 120 dias",
+        "url": "/blow-gummies-120-dias-tratamento"
+      },
+      {
+        "text": "Tratamento Capilar 180 dias",
+        "url": "/blow-gummies-180-dias-de-tratamento"
+      },
+      {
+        "text": "Tratamento Capilar 360 dias",
+        "url": "/blow-gummies-box-360-dias-de-tratamento"
+      }
+    ]
   },
   "contacts": {
     "title": "Contatos",
@@ -23,11 +130,14 @@
   "stamps": [
     {
       "src": "/img/uploads/ssl-safe.png",
-      "alt": "Secure connection"
+      "alt": "Secure connection",
+      "link": "#search-engine",
+      "width": 150,
+      "height": 62
     }
   ],
   "payment_methods": {
-    "bb": true,
+    "bb": false,
     "visa": true,
     "boleto": true,
     "aura": false,
@@ -35,12 +145,14 @@
     "elo": true,
     "hipercard": false,
     "hsbc": false,
-    "bradesco": true,
+    "bradesco": false,
     "santander": false,
     "mastercard": true,
+    "paypal": false,
     "citibank": false,
     "mais": false,
+    "pix": true,
     "itau": true
   },
-  "credits": ""
+  "credits": "® 2023. M.AZEVEDO COMERCIO DE PRODUTOS ALIMENTICIOS E SUPLEMENTOS ALIMENTARES, CNPJ 14.900.786/0001-08 - Todos os direitos reservados. É vetada a reprodução, total ou parcial das fotos e informações aqui veiculadas, sem a expressa autorização da administração do site."
 }

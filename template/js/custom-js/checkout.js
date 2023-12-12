@@ -3,7 +3,35 @@ var localFreebies = {}
 if(sessionStorage.getItem('freebieData')){
     localFreebies = JSON.parse(sessionStorage.getItem('freebieData'))
 }
+$('body').on('click','.cart__btn-checkout', function(e){
+    e.preventDefault();
+    let block = false;
+    
+    $('.freebie-rule').each(function(){
+      let freebieLength = $(this).find('.freebie-item').length
+      let selectable = parseInt($(this).attr('selectable'));    
+      let actives = $(this).find('.btn.active').length;
+      console.log(actives)
+      if(selectable > actives && freebieLength){
+        block = true;
+        $(this).prev('.freebie-rule-name').addClass('err_brinde');
+        if(selectable > 1){
+            $(this).prev('.freebie-rule-name').addClass('plural');
+        }
+      }else{
+        $(this).prev('.freebie-rule-name').removeClass('err_brinde');
+        $(this).prev('.freebie-rule-name').removeClass('plural');
+      }
+    });
+
+    if(!block){
+        window.location.href = $(this).attr('href');
+    }
+});
+
 $('body').on('click', '.freebie-item button', function(oObj){
+    $(this).closest('.freebie-rule').prev('.freebie-rule-name').removeClass('err_brinde');
+    $(this).closest('.freebie-rule').prev('.freebie-rule-name').removeClass('plural');
     let item = $(oObj.target).closest('.freebie-item')
     let _id = item.attr('product_id')
     let offer = item.closest('.freebie-rule').attr('label')

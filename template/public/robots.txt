@@ -1,8 +1,16 @@
 User-agent: *
 Allow: /
-Disallow: /app/
+Disallow: /app/$
+Disallow: /app/index$
+Disallow: /app/index.html$
 Disallow: /search$
-Disallow: /search?
 Disallow: /search.html$
-Disallow: /search.html?
-Disallow: /admin/
+Disallow: /admin/$
+Disallow: /admin/index$
+Disallow: /admin/index.html$
+Disallow: /admin/cms/$
+Disallow: /admin/cms/index$
+Disallow: /admin/cms/index.html$
+Disallow: /brindes-blow-gummies$
+Disallow: /brindes-blow-gummies-c957$
+

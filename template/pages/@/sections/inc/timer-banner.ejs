@@ -1,0 +1,55 @@
+<%
+const timestamp = Date.now()
+if (!opt.start || timestamp > new Date(opt.start).getTime()) {
+  if (timestamp < new Date(opt.end).getTime()) {
+    %>
+    <div id="timer-banner-<%= opt.index %>" class="container timer-banner" data-end="<%= opt.end %>">
+      <div class="container-segment">
+        <div class="segment">
+          <div class="flip-card" data-hours-tens>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+          <div class="flip-card" data-hours-ones>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+        </div>
+        <div class="segment-title">Horas</div>
+      </div>
+      <div class="container-segment">
+        <div class="segment">
+          <div class="flip-card" data-minutes-tens>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+          <div class="flip-card" data-minutes-ones>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+        </div>
+        <div class="segment-title">Minutos</div>
+      </div>
+      <div class="container-segment">
+        <div class="segment">
+          <div class="flip-card" data-seconds-tens>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+          <div class="flip-card" data-seconds-ones>
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+        </div>
+        <div class="segment-title">Segundos</div>
+      </div>
+    </div>
+    <script>
+      setTimeout(() => {
+        window.timerFunction('<%- opt.end %>', '#timer-banner-<%= opt.index %>')
+      }, 500)
+    </script>
+    <%
+  }
+}
+%>

@@ -1,11 +1,12 @@
 {
   "pkg": "@ecomplus/widget-trustvox",
-  "active": false,
+  "active": true,
   "desktopOnly": false,
   "enableCheckout": false,
   "disablePages": true,
   "options": {
-    "trustvoxStoreId": ""
+    "trustvoxStoreId": 105365,
+    "widgetSrc": "https://static.trustvox.com.br/sincero/sincero.js"
   },
   "bodyAppend": "src/append/body",
   "productDescriptionAppend": "src/append/product-block",

@@ -6,19 +6,7 @@
     },
     {
       "type": "product-block",
-      "enabled": true,
-      "size_guide": {
-        "image": "",
-        "title": ""
-      }
-    },
-    {
-      "type": "related-products",
-      "title": "Produtos relacionados"
-    },
-    {
-      "type": "recommended-products",
-      "title": "Quem comprou este produto, também comprou:"
+      "enabled": true
     },
     {
       "type": "product-description",
@@ -27,15 +15,6 @@
     {
       "type": "product-specifications",
       "enabled": true
-    },
-    {
-      "type": "offers-timer",
-      "max_hours": 24,
-      "start": "2022-04-18T02:49:59.158Z",
-      "end": "2022-04-19T02:47:26.277Z",
-      "offers": [
-        "624c7ce42e405e04ff241589"
-      ]
     }
   ]
 }

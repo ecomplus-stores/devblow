@@ -5,7 +5,8 @@
       "enabled": true
     },
     {
-      "type": "page-title"
+      "type": "page-title",
+      "title": ""
     },
     {
       "type": "document-banner",
@@ -14,7 +15,7 @@
     {
       "type": "collection-retail",
       "enabled": true,
-      "sort": "sales"
+      "sort": "highest_price"
     },
     {
       "type": "document-description",

@@ -1,47 +1,135 @@
 {
-  "meta_title": "",
-  "meta_description": "",
+  "meta_title": "Blow Gummies Hair Crescimento Capilar ",
+  "meta_description": "Blow Gummies Suplemento Alimentar em Gomas.",
   "sections": [
     {
       "type": "banner-slider",
-      "autoplay": 9000,
-      "full_width": false,
+      "autoplay": 10000,
       "slides": [
         {
-          "img": "/img/uploads/rect89.webp",
-          "link": "/headset",
-          "alt": "Headset banner",
-          "start": "2020-04-11T05:54:06.750Z",
-          "end": "2020-12-31T03:00:00.000Z",
-          "mobile_img": "/img/uploads/headphone.webp"
-        },
-        {
-          "img": "/img/uploads/banner2.webp",
-          "alt": "Banner sample two",
           "start": "",
           "end": "",
-          "mobile_img": "/img/uploads/passion.webp"
+          "img": "/img/uploads/banner-site-dia-do-comercio-pote-extra-copiar-1-.webp",
+          "mobile_img": "/img/uploads/banner-site-dia-do-comercio-pote-extra-1-1.webp",
+          "link": "https://www.blowgummies.com.br/?utm_source=banner&utm_medium=site&utm_campaign=maisblow"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-site-kits-padrao-50-off.webp",
+          "mobile_img": "/img/uploads/kit-50-pote-extra-7-.jpg",
+          "link": "https://www.blowgummies.com.br/?utm_source=banner&utm_medium=site&utm_campaign=maisblow"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-site-kits-padrao-50-off.webp",
+          "link": "https://www.blowgummies.com.br/?utm_source=banner&utm_medium=site&utm_campaign=BLOWZINHA",
+          "mobile_img": "/img/uploads/kit-50-pote-extra-6-.jpg"
+        }
+      ],
+      "full_width": true
+    },
+    {
+      "type": "custom-html",
+      "html": "<div class=\"\" id=\"apx_form\"> <div class=\"\" style=\"text-align: center;justify-content: center;align-items: center; display:flex;flex-wrap:wrap;\"> <div class=\"col-12  px-0 col-md-5\"> <b>Inscreva-se agora<small></small></b> <small>Seja a primeira a receber descontos e conteúdos exclusivos.</small> </div><div class=\"col-12  px-0 col-md-5\"> <form id=\"apx_replicateForm\"> <input type=\"email\" required name=\"mail\" placeholder=\"Digite seu e-mail\"> <button type=\"submit\" class=\"btn\">Cadastrar</button> </form> </div></div></div><style>#apx_form form{display: flex; align-items: center; margin: 0;}#apx_form form input{border: 1px solid #000; padding: 15px; height: 46px; border-radius: 3px 0 0 3px; width: 100%;}#apx_form form button{background:#000; color:#fff; font-weight: bold; border: 0; border-radius: 0px 3px 3px 0; height: 46px; padding: 0 30px;}#apx_form b{font-size:22px;color: #f51879;font-weight: bold;text-transform: uppercase;font-family: GoldplayAltBold;}#apx_form b small{line-height: initial;font-weight: normal;text-transform: initial;font-weight: 400;font-size: 14px;font-family: GoldplayMedium;margin: 0px 0 0 0;display: block;}@media(max-width:990px){#apx_form small{display:Block;margin-bottom:15px;font-size:12px;}#apx_form b{font-size:18px}}</style>"
+    },
+    {
+      "type": "dynamic-showcase",
+      "load_more": true,
+      "sort": "views"
+    },
+    {
+      "type": "vantagens",
+      "html": "<div class=\"box-gumm-mob\"><a href=\"#search-engine\"><img loading=\"lazy\" src=\"/img/uploads/blow-vendidos.webp\" alt=\"Blow Gummies Mais Vendida\"  /></a></div>\n<!--<div class=\"box-bg-gummie\"><div class=\"text-gummie\"><div class=\"oque-sao\"><h2>O que são as</h2><div class=\"title-blow\"></div></div><div class=\"text-sobre\">A Blow Gummies é um suplemento alimentar em goma com formato de ursinho, fácil e divertido de ingerir, não é o máximo?! Além de ter um gostinho IN-CRÍ-VEL, com 4 sabores diferentes, é rico com 12 vitaminas e minerais que ajudam no crescimento e fortalecimento dos seus cabelos e unhas. Por fortalecer os fios, auxilia também no processo de queda de cabelo, tudo do jeitinho que a gente ama!! E você acha que acabou por aqui? Nada disso mana, fica ainda melhor! A Blow Gummies proporciona mais brilho aos seus cabelos e suas unhas nascem mais fortes. Tudo isso dentro de um potinho com 60 gominhas que é equivalente a 60 dias de tratamento, não tem como não se apaixonar!</div><div class=\"text-gummie\"><a id=\"cta\" href=\"#search-engine\">COMPRE AGORA</a></div></div></div>-->\n<div class=\"box-gumm-mob\"><a href=\"#search-engine\"><img loading=\"lazy\" src=\"/img/uploads/blow-vendidos.webp\" alt=\"Blow Gummies Mais Vendida\" /></a></div>\n<div class=\"box-bg-gummie\">\n<div class=\"text-gummie\">\n<div class=\"oque-sao\">\n<div class=\"title-blow\">&nbsp;</div>\n<h2>A Blow Gummies &eacute; um suplemento alimentar em goma com formato de ursinho, f&aacute;cil e divertido de ingerir, n&atilde;o &eacute; o m&aacute;ximo?!</h2>\n</div>\n<div class=\"text-sobre\">\n<div class=\"box1__sobre\">Al&eacute;m de ter um gostinho IN-CR&Iacute;-VEL, com 4 sabores diferentes, &eacute; rico com 12 vitaminas e minerais que ajudam no crescimento e fortalecimento dos seus cabelos e unhas. <br /><br />Por fortalecer os fios, auxilia tamb&eacute;m no processo de queda de cabelo, tudo do jeitinho que a gente ama!! E voc&ecirc; acha que acabou por aqui? Nada disso mana, fica ainda melhor!</div>\n<div class=\"box2__sobre\">A Blow Gummies proporciona mais brilho aos seus cabelos e suas unhas nascem mais fortes. <br /><br />Tudo isso dentro de um potinho com 60 gominhas que &eacute; equivalente a 60 dias de tratamento, n&atilde;o tem como n&atilde;o se apaixonar!</div>\n</div>\n<div class=\"text-gummie\"><a id=\"cta\" href=\"#search-engine\">COMPRE AGORA</a></div>\n</div>\n</div>"
+    },
+    {
+      "type": "porque-falam",
+      "html": "<div class=\"box-bg-porque\"><div class=\"title-box\"><div class=\"title\"><h2>Porquê </h2></div><div class=\"title-blow\"></div></div><div class=\"text-porque\"><div class=\"box-gummie item1\"><img class=\"img-fluid lozad\" data-src=\"/img/uploads/bloco1.png\"><h3>Divertida de Mastigar</h3></div><div class=\"box-gummie item2\"><img class=\"img-fluid lozad\" data-src=\"/img/uploads/bloco2.png\"><h3>Sabores Incríveis</h3></div><div class=\"box-gummie item3\"><img class=\"img-fluid lozad\" data-src=\"/img/uploads/bloco3.png\"><h3>Produto Cruelty Free</h3></div><div class=\"box-gummie item4\"><img class=\"img-fluid lozad\" data-src=\"/img/uploads/bloco4.png\"><h3>Feitos com Pectina</h3></div><div class=\"box-gummie item5\"><img class=\"img-fluid lozad\" data-src=\"/img/uploads/bloco5.png\"><h3>Tratamento de 60 dias</h3></div></div></div>"
+    },
+    {
+      "type": "carousel-influencers",
+      "autoplay": 10000,
+      "banners": [
+        {
+          "img": "/img/uploads/bia-siqueira-blow-gummies.webp",
+          "alt": "Bia Siqueira",
+          "link": "#search-engine"
+        },
+        {
+          "img": "/img/uploads/julia-doorman-blow-gummies.webp",
+          "alt": "Júlia Doorman",
+          "link": "#search-engine"
+        },
+        {
+          "img": "/img/uploads/farkile-blow-gummies.webp",
+          "alt": "Farkile",
+          "link": "#search-engine"
+        },
+        {
+          "img": "/img/uploads/pamela-drudi-blow-gummies.webp",
+          "alt": "Pamela Drudi",
+          "link": "#search-engine"
+        },
+        {
+          "img": "/img/uploads/vivian-amorim-blow-gummies.webp",
+          "alt": "Vivian Amorim",
+          "link": "#search-engine"
+        },
+        {
+          "alt": "Evelyn Regly",
+          "img": "/img/uploads/evelyn-regly-blow-gummies.webp",
+          "link": "#search-engine"
+        },
+        {
+          "link": "#search-engine",
+          "img": "/img/uploads/ana-lidia-blow-gummies.webp",
+          "alt": "Ana Lídia Lopes"
         }
       ]
     },
     {
-      "type": "info-bar",
-      "enabled": true
+      "type": "grid-op",
+      "banners": [
+        {
+          "img": "/img/uploads/blow-gummies-funciona-harin.webp",
+          "link": "#search-engine"
+        },
+        {
+          "img": "/img/uploads/blow-gummies-funciona-leticia-silva.webp",
+          "link": "#search-engine"
+        },
+        {
+          "img": "/img/uploads/blow-gummies-funciona-thaynara-lorenzi.webp",
+          "link": "#search-engine"
+        },
+        {
+          "img": "/img/uploads/blow-gummies-funciona-paula-theixeira.webp",
+          "link": "#search-engine"
+        },
+        {
+          "img": "/img/uploads/blow-gummies-funciona-isa-fortunatto.webp",
+          "link": "#search-engine"
+        }
+      ],
+      "autoplay": 5000,
+      "html": "<h2>O que falam<span>sobre as</span></h2>"
     },
     {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "collection_id": null,
-      "sort": "offers",
-      "title": "",
-      "headless": false,
-      "limit": 12,
-      "page": 1
+      "type": "resultados",
+      "html": "<div class=\"box-bg-resultados\">\n  <div class=\"title-box\">\n    <div class=\"title\"><h2>É possivel notar<span>resultados usando as</span></h2></div>\n    <div class=\"title-blow\"></div>\n  </div>\n  <div class=\"resultados\"><!-- LightWidget WIDGET --><script src=\"https://cdn.lightwidget.com/widgets/lightwidget.js\"></script><iframe src=\"https://cdn.lightwidget.com/widgets/fb99c0232e5c54aa8aad124cb00246b8.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"></iframe></div>\n</div>"
     },
     {
-      "type": "page-title",
-      "title": "Loja demo da E-Com Plus",
-      "description": "Loja de demonstração e testes da plataforma E-Com Plus e Storefront. Todos os produtos, preços e informações são meramente ilustrativos."
+      "type": "famosos",
+      "html": "<div class=\"eu-quero\">\n  <div class=\"title-box\">\n    <a href=\"#search-engine\">\n    <div class=\"title\"><h2>Agora eu<span>queroooo!</span></h2></div>\n    <div class=\"title-blow-comprar\"></div>\n    </a>\n  </div>\n</div>"
+    },
+    {
+      "type": "falam",
+      "html": "<div class=\"instafeed-footer\">\n<!-- LightWidget WIDGET --><script src=\"https://cdn.lightwidget.com/widgets/lightwidget.js\"></script><iframe src=\"https://cdn.lightwidget.com/widgets/ef70a8b393a358f88c0679e84a75a20d.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"></iframe>\n</div>"
+    },
+    {
+      "type": "custom-html",
+      "html": "<meta name=\"p:domain_verify\" content=\"646bef620483d5f571e4897a77731938\"/>"
     }
   ]
 }

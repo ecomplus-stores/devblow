@@ -2,6 +2,7 @@
 // load menu options and contacts from content
 const menu = _.cms('menu') || {}
 const contacts = _.cms('contacts') || {}
+const header = _.cms('header') || {}
 
 // some social networks handled by contacts
 const networksWithColors = [
@@ -120,6 +121,11 @@ if (mainCategories) {
                 </span>
               </a>
             <% }) %>
+            <% if (header.contacts_stripe.pages) { %>
+              <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
+                <a class="menu__item" href="<%= link %>"><%= title %></a>
+              <% }) %>
+            <% } %>
           </div>
 
           <% if (category && category.slug) { %>

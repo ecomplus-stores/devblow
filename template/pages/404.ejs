@@ -3,6 +3,11 @@
 
 <head>
   <%- await include('@/head') %>
+  <style>
+    #fallback-404 h3 {
+      display: none;
+    }
+  </style>
 </head>
 
 <body id="page-404">
@@ -10,6 +15,39 @@
 
   <main role="main" id="main">
     <%- await include('@/layout/header') %>
+
+    <div class="container pt-5">
+      <h3 style="text-align: center; font-family: GoldplayAltBold; color: #565656; opacity: 0.7" class="mt-4">
+        <i style="opacity: 0.5" class="i-exclamation-triangle mr-3"></i>
+        Página não encontrada
+      </h3>
+    </div>
+
+    <article id="content" class="page page--<%= _.pageName %>">
+      <div class="sections pb-1 pb-sm-2 pb-lg-4">
+        <%
+        const sections = [{
+          "type": "collection-shelf",
+          "shuffle": true,
+          "limit": "",
+          "page": "",
+          "collection_id": null,
+          "sort": "sales",
+          "title": ""
+        }]
+        if (Array.isArray(sections)) {
+          for (let i = 0; i < sections.length; i++) {
+            const opt = sections[i]
+            if (opt && opt.enabled !== false) {
+              %>
+              <%- await include(`@/sections/${opt.type}`, { _, opt }) %>
+              <%
+            }
+          }
+        }
+        %>
+      </div>
+    </article>
 
     <div class="container py-5">
       <article id="fallback-404">

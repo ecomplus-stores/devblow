@@ -1,9 +1,10 @@
 <div class="dynamic-showcase">
-  <%- await include('@/sections/inc/retail-grid', {
+  <%- await include('@/sections/inc/retail-grid-blow', {
     _, opt: {
       sort: opt.sort,
       disable_filters: true,
-      disable_load_more: !opt.load_more
+      disable_load_more: !opt.load_more,
+      page_size: 100
     }
   }) %>
 </div>
