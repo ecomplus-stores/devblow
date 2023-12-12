@@ -92,7 +92,7 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
           <p class="product__sku">
             COD: <%= _.state.sku %>
           </p>
-          <% if (_.state.categories.every(category => category._id !== '64930a3b5e6069037042fa0a')) { %>
+          <% if (_.state.categories && _.state.categories.every(category => category._id !== '64930a3b5e6069037042fa0a')) { %>
             <div class="title-valor">
               <ul>
                 <li>Formulado para cabelos incrivelmente saudáveis</li>
