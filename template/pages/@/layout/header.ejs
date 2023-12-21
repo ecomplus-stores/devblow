@@ -181,6 +181,35 @@ if (header.categories_list) {
         </div>
       </div>
 
+    
+      <% if (categories && categories.length) { %>
+        <div class="d-none d-lg-block <%= isCategoriesNavFull ? 'col-12 order-lg-last' : 'col' %>">
+          <div class="menu-desk">
+            <% if (header.contacts_stripe.socials) { %>
+              <div class="sociais">
+                <% networks.forEach(network => { %>
+                  <% if (contacts[network]) { %>
+                    <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
+                      <i class="fab fa-<%= network %>"></i>
+                    </a>
+                  <% } %>
+                <% }) %>
+                  <a href="https://blog.blowhair.com.br/" target="_blank" rel="noopener">
+                    <i class="wp"></i>
+                  </a>
+                </div>
+            <% } %>
+            <nav class="header__nav<%= isCategoriesNavFull ? ' header__nav--full' : '' %>">
+              <% if (header.contacts_stripe.pages) { %>
+                <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
+                  <a href="<%= link %>"><%= title %></a>
+                <% }) %>
+              <% } %>
+            </nav>
+          </div>
+        </div>
+      <% } %>
+
       <% if (header.search_input) {
         const searchColSize = !isCategoriesNavFull && categories.length ? '-3' : ''
         %>
@@ -233,33 +262,6 @@ if (header.categories_list) {
           <% } %>
         </div>
       <% } %>
-      <% if (categories && categories.length) { %>
-        <div class="d-none d-lg-block <%= isCategoriesNavFull ? 'col-12 order-lg-last' : 'col' %>">
-          <div class="menu-desk">
-            <% if (header.contacts_stripe.socials) { %>
-              <div class="sociais">
-                <% networks.forEach(network => { %>
-                  <% if (contacts[network]) { %>
-                    <a href="<%= contacts[network] %>" target="_blank" rel="noopener">
-                      <i class="fab fa-<%= network %>"></i>
-                    </a>
-                  <% } %>
-                <% }) %>
-                  <a href="https://blog.blowhair.com.br/" target="_blank" rel="noopener">
-                    <i class="wp"></i>
-                  </a>
-                </div>
-            <% } %>
-            <nav class="header__nav<%= isCategoriesNavFull ? ' header__nav--full' : '' %>">
-              <% if (header.contacts_stripe.pages) { %>
-                <% header.contacts_stripe.pages.forEach(({ link, title }) => { %>
-                  <a href="<%= link %>"><%= title %></a>
-                <% }) %>
-              <% } %>
-            </nav>
-          </div>
-        </div>
-      <% } %>
     </div>
   </div>
 </header>
@@ -302,3 +304,10 @@ if (header.categories_list) {
   #apx_form b{font-size:22px;color: #f51879;font-weight: bold;text-transform: uppercase;font-family: GoldplayAltBold;}
   #apx_form b small{line-height: initial;font-weight: normal;text-transform: initial;font-weight: 400;font-size: 14px;font-family: GoldplayMedium;margin: 0px 0 0 0;display: block;}
 </style> -->
+
+<script>
+document.getElementById('mobile-search-btn').addEventListener('click', (e) => {
+  console.log(e)
+  
+  })
+</script>

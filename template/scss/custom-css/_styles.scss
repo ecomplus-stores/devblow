@@ -368,12 +368,6 @@ body {
     margin-top: 133px;
 }
 
-#user-button:after {
-    content: "Seja bem vindo(a)!";
-    font-family: GoldplayAltBold;
-    color: #f21b7a;
-    font-size: 14px;
-}
 
 .header__nav a:hover {
     background: #ffffff;
@@ -430,26 +424,7 @@ body {
     max-width: 95%;
 }
 
-.sociais {
-    margin: 0px 30px 0px 10px;
-}
 
-#user-button:before {
-    content: "Seja bem vindo(a)!";
-    font-family: 'GoldplayAltBold';
-    color: #f21b7a;
-    font-size: 14px;
-    position: absolute;
-    right: 8px;
-    bottom: 25px;
-}
-
-#user-button:after {
-    content: "Entrar ou Cadastrar-se";
-    color: #f21b7a;
-    font-size: 12.6px;
-    font-family: 'GoldplayRegular';
-}
 
 .title a:hover {
     text-decoration:none;
@@ -549,9 +524,7 @@ body {
 .resultados-html .container {
     max-width: 100%;
 }
-.sociais {
-    margin: 0;
-}
+
 }
 
 @media (min-width: 993px) and (max-width: 1099px) {
@@ -562,9 +535,7 @@ body {
 .resultados-html .container {
     max-width: 100%;
 }
-.sociais {
-    margin: 0;
-}
+
 
 .box-bg-gummie {
     padding-left: 63%;
@@ -840,7 +811,11 @@ body {
   color: #F51879;
 }
 #mobile-search-btn {
-  display: none;
+  display: block !important;
+}
+.header__buttons {
+    display: flex;
+    align-items: center;
 }
 @media(min-width: 767px) {
   #selos {
@@ -914,14 +889,8 @@ body {
   background-size: 100% 100%;
   padding-top: 5px
 }
-.sociais {
-  display: flex;
-  align-items: center;
-  margin: 0px 5px !important;
-  a {
-    padding: 0 5px !important;
-  }
-}
+
+
 
 .header__nav a:first-child {
   text-transform: uppercase !important;
@@ -1311,4 +1280,8 @@ body {
     .box-gummie.item4, .box-gummie.item5 {
         width: 50%
     }
+}
+
+.menu-desk .sociais {
+    display: none;
 }

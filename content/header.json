@@ -38,7 +38,7 @@
     "random": 20,
     "full_width": false
   },
-  "search_input": false,
+  "search_input": true,
   "desktop_megamenu": false,
   "alphabetical_order_submenu": false,
   "full_width_submenu": false
