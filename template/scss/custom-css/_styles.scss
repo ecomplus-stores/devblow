@@ -779,12 +779,6 @@ body {
 }
 
 
-/* @media (max-width:767px){
-#user-button img {
-    margin-top: 5px;
-}
-} */
-
 // Add your custom CSS here.
 #main {
   overflow-x: hidden !important;
@@ -1298,5 +1292,23 @@ body {
     padding-right: 15px;
     .variations__select option:disabled {
         display: none !important;
+    }
+}
+
+@media (max-width:767px){
+    #user-button {
+        height: 43px;
+    }
+    .header__buttons #mobile-search-btn {
+        display: none !important;
+    }
+    #logo-header {
+        text-align: center;
+    }
+}
+
+#mobile-search-btn {
+    i {
+        color: #f51879 !important
     }
 }
