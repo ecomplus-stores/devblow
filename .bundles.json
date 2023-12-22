@@ -1,29 +1,27 @@
 {
   "assetsByChunkName": {
-    "vendors~app-account~app-confirmation~app-order": "chunk.3815a3bcf1ebc71b579b.js",
-    "app-cart~app-checkout": "chunk.72db705611d31f0ca3ed.js",
-    "vendors~app-account~app-checkout": "chunk.9e330b68cc439f4bd219.js",
+    "vendors~app-account~app-confirmation~app-order": "chunk.e621c954618c5f3b3a5c.js",
+    "vendors~app-account~app-checkout": "chunk.5efd71b8f99e3251db2b.js",
     "admin": [
-      "admin.e937cb0d59875044a996.js",
-      "admin.e937cb0d59875044a996.js.map"
+      "admin.3fcb0f6f45031464726d.js",
+      "admin.3fcb0f6f45031464726d.js.map"
     ],
-    "app-account": "chunk.8933deb90d5ed30bb481.js",
-    "app-cart": "chunk.b51b107fb85f04b0e47f.js",
-    "app-checkout": "chunk.68de05217211497ee313.js",
-    "app-confirmation": "chunk.4941be43bdbf1bacecf5.js",
-    "app-order": "chunk.ce168c97da2b27d54d30.js",
+    "app-account": "chunk.8d60f48bfecf1c3e692e.js",
+    "app-cart": "chunk.7255dfa6fca03a74fc6f.js",
+    "app-checkout": "chunk.b0840b82934258bfb6d3.js",
+    "app-confirmation": "chunk.15327fdfd2f9e3a57e8e.js",
+    "app-order": "chunk.90aa73d8f1b1214cf4c8.js",
     "checkout": [
-      "checkout.3f9afaa1a73e203e53f4.js",
-      "checkout.3f9afaa1a73e203e53f4.js.map"
+      "checkout.7a460cfb5f40ca3e0cfc.js",
+      "checkout.7a460cfb5f40ca3e0cfc.js.map"
     ],
     "storefront": [
-      "storefront.fd2672f9a844770ad975.css",
-      "storefront.ca7a134cc9690722a314.js",
-      "storefront.fd2672f9a844770ad975.css.map",
-      "storefront.ca7a134cc9690722a314.js.map"
+      "storefront.5aa1608fddcf83ba9855.css",
+      "storefront.49e88cab7222140e0c38.js",
+      "storefront.5aa1608fddcf83ba9855.css.map",
+      "storefront.49e88cab7222140e0c38.js.map"
     ],
-    "vendors~app-account": "chunk.5eb8f4fa178c9e82d03f.js",
-    "vendors~app-cart": "chunk.7e0691e7a47781b3da0d.js",
-    "vendors~app-checkout": "chunk.2680a01209447b0678ef.js"
+    "vendors~app-cart": "chunk.e7a9cc761fa1d5238fd8.js",
+    "vendors~app-checkout": "chunk.7eb553d04349c4eabb45.js"
   }
 }
