@@ -803,6 +803,7 @@ body {
 }
 .menu-desk {
   display: flex;
+  justify-content: center;
   a {
     color: #F51879;
   }
@@ -1284,4 +1285,18 @@ body {
 
 .menu-desk .sociais {
     display: none;
+}
+
+@media(min-width: 992px) {
+    #search-input {
+        display: none !important;
+    }
+}
+
+.product-card .variations {
+    padding-left: 15px;
+    padding-right: 15px;
+    .variations__select option:disabled {
+        display: none !important;
+    }
 }
