@@ -1307,8 +1307,12 @@ body {
     }
 }
 
-#mobile-search-btn {
+#mobile-search-btn, #mgnr_search-trigger {
     i {
         color: #f51879 !important
     }
+}
+
+#search-bar.collapse.show {
+    display: unset !important;
 }

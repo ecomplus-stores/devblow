@@ -121,7 +121,7 @@ import {
     },
 
     mounted() {
-      $('#mobile-search-btn').click(() => {
+      $('#mgnr_search-trigger').click(() => {
         this.show();
       });
     },

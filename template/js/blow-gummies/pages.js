@@ -4,3 +4,11 @@ if (storefront && storefront.context && storefront.context.resource === 'product
         window.location = '/app/#/cart/' 
     })
 }
+
+const toggleButton = document.getElementById('mobile-search-btn');
+toggleButton.addEventListener('click', () => {
+  const instantSearchComponent = document.querySelector('[name="InstantSearch"]');
+  if (instantSearchComponent) {
+    instantSearchComponent.__vue__.toggleVisibility(); // Chama o método do componente Vue
+  }
+});
