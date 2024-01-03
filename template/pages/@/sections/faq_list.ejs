@@ -1,0 +1,57 @@
+<% 
+    if(Array.isArray(opt.questions) && opt.questions.length){
+
+        %>
+        <section
+            class="apx_faq my-5 py-5 px-2 px-md-5"
+       >
+            <div class="container">
+            <%
+                if(opt.title){
+                    %>
+                        <div class="apx_section-title text-center mb-4">
+                        <%
+                        if(opt.list != "description_last"){
+                            %>
+                            <small class="text-uppercase"><%- opt.description %></small>
+                            <%
+                        }
+                        %>
+                            <h2 class="text-bold text-uppercase"><%- opt.title %></h2>
+                        <%
+                        if(opt.list == "description_last"){
+                            %>
+                            <small class="text-uppercase"><%- opt.description %></small>
+                            <%
+                        }
+                        %>
+                        </div>
+                    <%
+                }
+            %>
+            <div class="row list mx-0">      
+                <div class="col-md-8 mx-auto">
+                <% for (let i = 0; i < opt.questions.length; i++) { %>
+                    <div class="apx_faq-item">
+                        <div class="hat px-3 py-2 my-2 d-flex justify-content-between">
+                            <span class="a_text py-2 d-block">
+                                <%- opt.questions[i].question.title %>
+                            </span>
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 7V17M7 12L17 12" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="content">
+                            <%- opt.questions[i].question.response %>
+                        </div>
+                    </div>
+                <% } %>          
+                </div>  
+            </div>
+        </div>
+      </section>
+    <%
+    }
+%>      

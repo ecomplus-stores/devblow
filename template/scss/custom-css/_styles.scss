@@ -1316,3 +1316,8 @@ body {
 #search-bar.collapse.show {
     display: unset !important;
 }
+.product-card {
+    .variations__grid-title.h5, .variations__value {
+        display: none !important;
+    }
+}

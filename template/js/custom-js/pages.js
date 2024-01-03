@@ -67,3 +67,10 @@ toggleButton.addEventListener('click', () => {
     instantSearchComponent.__vue__.toggleVisibility(); // Chama o método do componente Vue
   }
 });
+
+setInterval(() => {
+  if ($('#mgnr_search-trigger.collapsed') && $('#mgnr_search-trigger.collapsed').length && !document.getElementById('search-bar').classList.contains('show')) {
+    document.getElementById('search-bar').classList.add('show')
+  }
+  $('#mgnr_search-trigger.collapsed')
+}, 1000)
