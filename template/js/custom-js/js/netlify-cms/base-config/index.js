@@ -49,48 +49,50 @@ export default options => {
         widget: 'object',
         fields: [
           {
-            label: 'Título',
+            label: 'Título da Seção',
             required: false,
             name: 'title',
             widget: 'string'
-          },
+          },   
           {
-            label: 'Descrição',
-            required: false,
-            name: 'description',
-            widget: 'text'
-          },
-          {
-            label: 'Posição da descrição',
-            required: false,
-            name: 'list',
-            widget: 'select',
-            options: ["description_first","description_last"]
-          },        
-          {
-            label: 'Perguntas',
-            name: 'questions',
-            widget: 'list',
+            label: 'Bloco de perguntas',
+            name: 'questions_block',
+            widget: 'object',
             required:false,
             fields: [
-              {
-                label: 'Pergunta',
-                name: 'question',
-                widget: 'object',
-                required:false,
-                fields: [
-                  {
-                    label: 'Pergunta',
+                {
+                    label: 'Título do Bloco',
+                    required: false,
                     name: 'title',
-                    widget: 'string'          
-                  },
-                  {
-                    label: 'Resposta',
-                    name: 'response',
-                    widget: 'string'          
-                  }              
-                ]
-              },          
+                    widget: 'string',
+                    hint: 'Caso queira inserir multi blocos, insira um título'
+                },
+                {
+                    label: 'Perguntas',
+                    name: 'questions',
+                    widget: 'list',
+                    required:false,
+                    fields: [
+                        {
+                            label: 'Perguntas',
+                            name: 'question',
+                            widget: 'object',
+                            required:false,
+                            fields: [
+                              {
+                                label: 'Pergunta',
+                                name: 'title',
+                                widget: 'string'          
+                              },
+                              {
+                                label: 'Resposta',
+                                name: 'response',
+                                widget: 'string'          
+                              }              
+                            ]
+                        }
+                    ]
+                }         
             ]
           },        
         ]
