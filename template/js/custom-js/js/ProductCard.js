@@ -25,6 +25,7 @@ import {
   import ProductVariations from '@ecomplus/storefront-components/src/ProductVariations.vue'
   import ecomPassport from '@ecomplus/passport-client'
   import { toggleFavorite, checkFavorite } from '@ecomplus/storefront-components/src/js/helpers/favorite-products'
+  import Countdown from '../components/Countdown.vue'
   
   const getExternalHtml = (varName, product) => {
     if (typeof window === 'object') {
@@ -47,6 +48,7 @@ import {
       ALink,
       APicture,
       APrices,
+      Countdown,
       ProductVariations
     },
   
