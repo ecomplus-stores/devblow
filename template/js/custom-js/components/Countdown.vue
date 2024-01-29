@@ -119,10 +119,8 @@ export default {
   top: 0;
   right: -13px;
   font-size: 32px;
-  @media(max-width: 410px) {
-    font-size: 26px; 
-  }
 }
+
 .countdown li:first-of-type {
   margin-left: 0;
 }
@@ -138,17 +136,17 @@ export default {
   line-height: 1.4;
   margin-bottom: 0;
   color: #df0174 !important;
-  @media(max-width: 410px) {
-    font-size: 26px; 
-  }
 }
 .countdown .text {
   text-transform: uppercase;
   margin-bottom: 0;
   font-size: 10px;
   color: #df0174 !important
-  @media(max-width: 410px) {
-    font-size: 26px; 
-  }
+}
+
+@media(max-width: 410px) {
+    .countdown li:after, .countdown .digit {
+        font-size: 26px !important;
+    }
 }
 </style>
