@@ -1,5 +1,5 @@
 <template>
-    <ul class="vuejs-countdown">
+    <ul class="countdown">
         <li v-if="days > 0">
             <p class="digit">{{ days | twoDigits }}</p>
             <p class="text">{{ days > 1 ? 'dias' : 'dia' }}</p>
@@ -23,7 +23,7 @@
 let interval = null;
 
 export default {
-    name: 'vuejsCountDown',
+    name: 'countdown',
     props: {
         deadline: {
             type: String
@@ -100,46 +100,55 @@ export default {
 }
 </script>
 <style>
-.vuejs-countdown {
+.countdown {
   padding: 0;
   margin: 0;
 }
-.vuejs-countdown li {
+.countdown li {
   display: inline-block;
   margin: 0 8px;
   text-align: center;
   position: relative;
 }
-.vuejs-countdown li p {
+.countdown li p {
     margin: 0;
 }
-.vuejs-countdown li:after {
+.countdown li:after {
   content: ":";
   position: absolute;
   top: 0;
   right: -13px;
   font-size: 32px;
+  @media(max-width: 410px) {
+    font-size: 26px; 
+  }
 }
-.vuejs-countdown li:first-of-type {
+.countdown li:first-of-type {
   margin-left: 0;
 }
-.vuejs-countdown li:last-of-type {
+.countdown li:last-of-type {
   margin-right: 0;
 }
-.vuejs-countdown li:last-of-type:after {
+.countdown li:last-of-type:after {
   content: "";
 }
-.vuejs-countdown .digit {
+.countdown .digit {
   font-size: 32px;
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 0;
   color: #df0174 !important;
+  @media(max-width: 410px) {
+    font-size: 26px; 
+  }
 }
-.vuejs-countdown .text {
+.countdown .text {
   text-transform: uppercase;
   margin-bottom: 0;
   font-size: 10px;
   color: #df0174 !important
+  @media(max-width: 410px) {
+    font-size: 26px; 
+  }
 }
 </style>
