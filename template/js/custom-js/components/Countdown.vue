@@ -146,7 +146,7 @@ export default {
 
 @media(max-width: 410px) {
     .countdown li:after, .countdown .digit {
-        font-size: 26px !important;
+        font-size: 23px !important;
     }
 }
 </style>
