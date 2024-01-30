@@ -39,6 +39,8 @@ import {
     }
     return undefined
   }
+
+  let interval = null;
   
   export default {
     name: 'ProductCard',
@@ -93,7 +95,8 @@ import {
         isFavorite: false,
         error: '',
         selectedVariationId: '',
-        endDate: '2024-03-01T03:00:00.000Z'
+        endDate: '2024-01-30T13:59:59.000Z',
+        now: new Date().getTime(),
       }
     },
   
@@ -112,9 +115,8 @@ import {
       },
 
       isPromo () {
-        const now = new Date().getTime()
         const endDate = new Date(this.endDate).getTime()
-        return endDate > now
+        return endDate > this.now
       },
   
       buyHtml () {
@@ -265,6 +267,11 @@ import {
       }
       if (!this.isLoaded) {
         this.fetchItem()
+      }
+      if (this.isPromo) {
+        interval = setInterval(() => {
+          this.now = new Date().getTime();
+        }, 1000);
       }
     }
   }
