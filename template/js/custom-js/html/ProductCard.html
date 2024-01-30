@@ -98,6 +98,7 @@
       <template v-else>
         <slot name="prices">
           <a-prices
+            v-if="!isPromo"
             class="product-card__prices"
             :product="body"
             :installments-option="installmentsOption"
@@ -131,6 +132,7 @@
   </a-link>
 
   <product-variations
+    v-if="!isPromo"
     :product="body"
     :selected-id.sync="selectedVariationId"
     :max-options-btns="2"
@@ -143,7 +145,7 @@
   >
     Selecione uma opção antes de comprar
   </a-alert>
-  <template v-if="body.price && body.available && body.visible && isInStock">
+  <template v-if="body.price && body.available && body.visible && isInStock && !isPromo">
     <div
           @click="buy"
           class="product-card__buy fade"
@@ -177,7 +179,7 @@
         </div>
   </template>
 
-  <Countdown deadline="March 01, 2024"></Countdown>
+  <Countdown :deadline="endDate"></Countdown>
 
   <template v-if="isLoading">
     <slot/>

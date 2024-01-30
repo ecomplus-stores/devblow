@@ -92,7 +92,8 @@ import {
         isHovered: false,
         isFavorite: false,
         error: '',
-        selectedVariationId: ''
+        selectedVariationId: '',
+        endDate: '2024-03-01T03:00:00.000Z'
       }
     },
   
@@ -108,6 +109,12 @@ import {
   
       ratingHtml () {
         return getExternalHtml('Rating', this.body)
+      },
+
+      isPromo () {
+        const now = new Date().getTime()
+        const endDate = new Date(this.endDate).getTime()
+        return endDate > now
       },
   
       buyHtml () {
