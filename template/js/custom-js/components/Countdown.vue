@@ -1,5 +1,5 @@
 <template>
-    <ul class="countdown">
+    <ul v-if="date > now" class="countdown">
         <li v-if="days > 0">
             <p class="digit">{{ days | twoDigits }}</p>
             <p class="text">{{ days > 1 ? 'dias' : 'dia' }}</p>
@@ -25,6 +25,9 @@ let interval = null;
 export default {
     name: 'countdown',
     props: {
+        product: {
+            type: Object
+        },
         deadline: {
             type: String
         },
@@ -47,7 +50,7 @@ export default {
             throw new Error("Missing props 'deadline' or 'end'");
         }
 
-        let endTime = this.deadline ? this.deadline : this.end;
+        let endTime = this.endDate;
         this.date = Math.trunc((new Date(endTime)).getTime() / 1000);
 
         if (!this.date) {
@@ -73,11 +76,30 @@ export default {
 
         days() {
             return Math.trunc(this.diff / 60 / 60 / 24)
-        }
+        },
+
+        endDate () {
+            let promoDates = this.product.price_effective_date
+            if (promoDates) {
+                let now = new Date()
+                if (promoDates.end) {
+                    if (new Date(promoDates.end) > now) {
+                    return new Date(promoDates.end).toISOString()
+                    }
+                } else if(promoDates.start) {
+                    if (new Date(promoDates.start) > now) {
+                    return new Date(promoDates.start).toISOString()
+                    }
+                }
+            }
+            return this.deadline
+        },
     },
     watch: {
         now(value) {
+            console.log(value)
             this.diff = this.date - this.now;
+            console.log(this.diff)
             if(this.diff <= 0 || this.stop){
                 this.diff = 0;
                 // Remove interval

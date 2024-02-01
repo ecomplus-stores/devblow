@@ -143,7 +143,7 @@
   >
     Selecione uma opção antes de comprar
   </a-alert>
-  <template v-if="body.price && body.available && body.visible && isInStock>
+  <template v-if="body.price && body.available && body.visible && isInStock">
     <div
           @click="buy"
           class="product-card__buy fade"
@@ -177,7 +177,7 @@
         </div>
   </template>
 
-  <Countdown :deadline="endDate"></Countdown>
+  <countdown v-if="endDateT > now" :key="body._id" :product="body" :deadline="endDate" />
 
   <template v-if="isLoading">
     <slot/>

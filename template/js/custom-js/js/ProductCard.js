@@ -95,7 +95,7 @@ import {
         isFavorite: false,
         error: '',
         selectedVariationId: '',
-        endDate: '2024-01-30T13:59:59.000Z',
+        endDate: '2023-02-03T13:59:59.000Z',
         now: new Date().getTime(),
       }
     },
@@ -109,6 +109,7 @@ import {
       isWithoutPrice () {
         return !getPrice(this.body)
       },
+      
   
       ratingHtml () {
         return getExternalHtml('Rating', this.body)
@@ -130,6 +131,26 @@ import {
       name () {
         return getName(this.body)
       },
+
+      now () {
+        return new Date()
+      },
+
+      endDateT () {
+        let promoDates = this.product.price_effective_date
+        if (promoDates) {
+            let now = new Date()
+            if (promoDates.end) {
+                if (new Date(promoDates.end) > now) {
+                return new Date(promoDates.end)
+                }
+            } else if(promoDates.start) {
+                if (new Date(promoDates.start) > now) {
+                return new Date(promoDates.start)
+                }
+            }
+        }
+    },
   
       strBuy () {
         return this.buyText ||
