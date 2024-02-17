@@ -132,10 +132,6 @@ import {
         return getName(this.body)
       },
 
-      now () {
-        return new Date()
-      },
-
       endDateT () {
         let promoDates = this.product.price_effective_date
         if (promoDates) {

@@ -87,7 +87,7 @@ if (stamps && Array.isArray(stamps.stamps_list) && stamps.stamps_list.length) {
 
     <div class="product-card__prices prices">
       <strong class="prices__value">
-        <% if (opt.item.available && opt.item.visible && _.ecomUtils.inStock(opt.item)) { %>
+        <% if (_.ecomUtils.inStock(opt.item)) { %>
           <%= _.ecomUtils.formatMoney(itemData.price) %>
         <% } else { %>
           --

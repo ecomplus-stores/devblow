@@ -6,7 +6,7 @@
 
   if (opt.shuffle) {
     let m = opt.items.filter(item => {
-      return _.ecomUtils.inStock(item)
+      return item.available && _.ecomUtils.inStock(item)
     }).length
     let t, i
     while (m) {
@@ -48,14 +48,14 @@
       class="glide"
       data-wait-mutation="true"
       data-autoplay="<%= opt.autoplay %>"
-      data-per-view="4"
-      data-per-view-md="3"
-      data-per-view-sm="2"
+      data-per-view="1"
+      data-per-view-md="1"
+      data-per-view-sm="1"
     >
       <div class="glide__track" data-glide-el="track">
         <ul class="glide__slides products-carousel__list">
           <% for (let i = 0; i < opt.items.length; i++) { %>
-            <% if (true) { %>
+            <% if (opt.items[i].available && opt.items[i].visible) { %>
               <li class="glide__slide products-carousel__item">
                 <%- await include('@/sections/inc/product-item', {
                   _, opt: { item: opt.items[i] }
@@ -65,25 +65,6 @@
           <% } %>
         </ul>
 
-        <div
-          class="glide__arrows glide__arrows--outer"
-          data-glide-el="controls"
-        >
-          <button
-            class="btn glide__arrow glide__arrow--left"
-            data-glide-dir="<"
-            aria-label="<%= _.dictionary('previous') %>"
-          >
-            <i class="i-chevron-left"></i>
-          </button>
-          <button
-            class="btn glide__arrow glide__arrow--right"
-            data-glide-dir=">"
-            aria-label="<%= _.dictionary('next') %>"
-          >
-            <i class="i-chevron-right"></i>
-          </button>
-        </div>
       </div>
     </div>
   </section>

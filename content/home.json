@@ -35,6 +35,30 @@
       "html": "<div class=\"\" id=\"apx_form\"> <div class=\"\" style=\"text-align: center;justify-content: center;align-items: center; display:flex;flex-wrap:wrap;\"> <div class=\"col-12  px-0 col-md-5\"> <b>Inscreva-se agora<small></small></b> <small>Seja a primeira a receber descontos e conteúdos exclusivos.</small> </div><div class=\"col-12  px-0 col-md-5\"> <form id=\"apx_replicateForm\"> <input type=\"email\" required name=\"mail\" placeholder=\"Digite seu e-mail\"> <button type=\"submit\" class=\"btn\">Cadastrar</button> </form> </div></div></div><style>#apx_form form{display: flex; align-items: center; margin: 0;}#apx_form form input{border: 1px solid #000; padding: 15px; height: 46px; border-radius: 3px 0 0 3px; width: 100%;}#apx_form form button{background:#000; color:#fff; font-weight: bold; border: 0; border-radius: 0px 3px 3px 0; height: 46px; padding: 0 30px;}#apx_form b{font-size:22px;color: #f51879;font-weight: bold;text-transform: uppercase;font-family: GoldplayAltBold;}#apx_form b small{line-height: initial;font-weight: normal;text-transform: initial;font-weight: 400;font-size: 14px;font-family: GoldplayMedium;margin: 0px 0 0 0;display: block;}@media(max-width:990px){#apx_form small{display:Block;margin-bottom:15px;font-size:12px;}#apx_form b{font-size:18px}}</style>"
     },
     {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 8,
+      "page": 1,
+      "collection_id": "65cfffa287ab487fbfbb4c4c:collections:LANÇAMENTO:/lancamento",
+      "title": "LANÇAMENTOS"
+    },
+    {
+      "type": "shelfs-nav",
+      "shuffle": true,
+      "limit": 12,
+      "page": 1,
+      "collection_ids": [
+        "65b152e02cd6b659591147a0:collections:60 Dias:/60-dias",
+        "65b152ee2cd6b659591147b1:collections:120 Dias:/120-dias",
+        "65b153882cd6b659591148ba:collections:180 Dias:/180-dias",
+        "65b1549b2cd6b65959114a8a:collections:240 Dias:/240-dias",
+        "65b158312cd6b65959115068:collections:300 Dias:/300-dias",
+        "65b158672cd6b659591150ef:collections:360 Dias:/360-dias"
+      ],
+      "shelfs_title": "Queridinhos",
+      "sort": "sales"
+    },
+    {
       "type": "dynamic-showcase",
       "load_more": true,
       "sort": "views"
@@ -130,6 +154,55 @@
     {
       "type": "custom-html",
       "html": "<meta name=\"p:domain_verify\" content=\"646bef620483d5f571e4897a77731938\"/>"
+    },
+    {
+      "type": "mgnr_faq",
+      "title": "Perguntas Frequentes",
+      "list": "description_first",
+      "questions": [
+        {
+          "question": {
+            "title": "O que é Blow Gummies?",
+            "response": "Lorem ipslum dolor"
+          }
+        },
+        {
+          "question": {
+            "title": "O que tem dentro da Blow Gummies?",
+            "response": "Dolor sit lorem ipslum"
+          }
+        },
+        {
+          "question": {
+            "title": "Quantas blow gummies posso ingerir por dia?",
+            "response": "Apenas 1 blowzinha"
+          }
+        },
+        {
+          "question": {
+            "title": "Em quanto tempo começo a ver os efeitos?",
+            "response": "A blow gummies é uma vitamina de suplemento capilar.xx"
+          }
+        },
+        {
+          "question": {
+            "title": "Quem pode tomar Blow Gummies?",
+            "response": "Todxs"
+          }
+        },
+        {
+          "question": {
+            "title": "A Blow Gummies funciona para todos os tipos de cabelo?",
+            "response": "Claro! xxx"
+          }
+        },
+        {
+          "question": {
+            "title": "A Blow Gummies possui contraindicação?",
+            "response": "XXXX"
+          }
+        }
+      ]
     }
   ]
 }

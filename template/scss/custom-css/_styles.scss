@@ -230,7 +230,7 @@ body {
 }
 
 .page--home .products-carousel__title {
-    display:none;
+    //display:none;
 }
 
 .page--home .products-carousel {
@@ -1319,5 +1319,134 @@ body {
 .product-card {
     .variations__grid-title.h5, .variations__value {
         display: none !important;
+    }
+}
+
+.shelfs-nav__tab {
+    border-bottom: none;
+    padding: 20px;
+    border: 1px solid #f51879;
+    border-radius: 100px;
+    opacity: 1;
+    h4 {
+      margin-bottom: 0;
+      color: #f51879;
+    }
+    &.active {
+      background-color: #f51879;
+      h4 {
+        color: #fff !important;
+      }
+    }
+  }
+  
+  .shelfs-nav__tab:not(.active) {
+    opacity: 1;
+  }
+
+  .shelfs-nav {
+    &__tabs {
+        @media(min-width: 767px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    @media(min-width: 767px) {
+        .products-carousel .glide__track, .products-carousel__list {
+            align-items: stretch;
+            display: flex;
+            justify-content: center;
+        }
+        .products-carousel__item {
+            max-width: 400px;
+        }
+    }
+    @media(max-width: 767px) {
+        .products-carousel .products-carousel__item {
+            width: 100% !important;
+        }
+    }
+}
+  
+.products-carousel__title::before {
+    background: transparent;
+    height: 0;
+}
+
+.faq_list{
+    .list{
+        display:flex;
+        flex-direction: column;
+    }
+    .faq_list-item{
+        .hat{
+            .a_text{
+                letter-spacing: 0.05em;
+            }
+            button{
+                border:0;
+                padding:0;
+                background:transparent;
+                svg{
+                    transition: all .5s;
+                }
+            }
+            border: 1px solid #F8F8F8;
+        }
+        .content{
+            font-family: "Source Sans Pro";   
+            letter-spacing: 0.05em;         
+            height:0;
+            max-height:0;
+            overflow: hidden;
+            transition: padding .5s, max-height .5s;
+            background:#f8f8f8;
+            padding: 0rem;
+            margin-top: -.5rem;
+            box-sizing: border-box;
+        }
+    }
+    .faq_list-item.visible{
+        .hat{
+            button{
+                border:0;
+                padding:0;
+                background:transparent;
+                svg{
+                    transform: rotate(315deg);
+                }
+            }            
+        }
+        .content{
+            transition: padding .5s, max-height .5s;
+            max-height:180px;
+            overflow-y: auto;
+            height:auto;
+            padding: 2rem;
+        }
+    }
+}
+.text-center {
+    text-align: center;
+}
+.mx-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.faq_list {
+    h2 {
+        color: #f3237f;
+        font-family: GoldplayAltBold;
+        font-size: 30px;
+    }
+    &-item {
+        svg path {
+            color: #f3237f;
+        }
     }
 }

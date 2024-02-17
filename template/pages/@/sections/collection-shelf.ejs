@@ -38,6 +38,7 @@ if (opt.sort || opt.collection_id) {
   }
 
   if (search) {
+    
     if (opt.sort) {
       search.setSortOrder(opt.sort)
     }
@@ -48,6 +49,7 @@ if (opt.sort || opt.collection_id) {
       search.setPageNumber(opt.page)
     }
     try {
+      search.dsl.query.bool.filter[0].term.visible = false
       await search.fetch()
       items = search.getItems()
     } catch (err) {
@@ -64,6 +66,7 @@ if (opt.sort || opt.collection_id) {
   const offset = opt.page >= 2 ? (opt.page - 1) * size : 0
   items = _.items.slice(offset, offset + size)
 }
+//console.log('98', items)
 %>
 
 <div class="collection-shelf my-lg-5">

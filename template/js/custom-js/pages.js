@@ -74,3 +74,7 @@ setInterval(() => {
   }
   $('#mgnr_search-trigger.collapsed')
 }, 1000)
+
+$('.faq_list button').click(function(){
+  $(this).closest('.faq_list-item').toggleClass('visible')
+});

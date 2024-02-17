@@ -1,7 +1,6 @@
 <div
   class="product-card"
   :class="{
-    'product-card--inactive': body._id && !isActive,
     'product-card--small': isSmall
   }"
   @mouseover="isHovered = true"
@@ -70,7 +69,7 @@
 
       <slot
         name="unavailable"
-        v-if="!body.available || !body.visible"
+        v-if="false"
       >
         <p class="badge badge-warning mt-auto">
           {{ i19unavailable }}

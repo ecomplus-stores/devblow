@@ -96,6 +96,58 @@ export default options => {
             ]
           },        
         ]
+    },
+    {
+      label: 'FAQ 2',
+      name: 'mgnr_faq',
+      widget: 'object',
+      fields: [
+        {
+          label: 'Título',
+          required: false,
+          name: 'title',
+          widget: 'string'
+        },
+        {
+          label: 'Descrição',
+          required: false,
+          name: 'description',
+          widget: 'text'
+        },
+        {
+          label: 'Posição da descrição',
+          required: false,
+          name: 'list',
+          widget: 'select',
+          options: ["description_first","description_last"]
+        },        
+        {
+          label: 'Perguntas',
+          name: 'questions',
+          widget: 'list',
+          required:false,
+          fields: [
+            {
+              label: 'Pergunta',
+              name: 'question',
+              widget: 'object',
+              required:false,
+              fields: [
+                {
+                  label: 'Pergunta',
+                  name: 'title',
+                  widget: 'string'          
+                },
+                {
+                  label: 'Resposta',
+                  name: 'response',
+                  widget: 'string'          
+                }              
+              ]
+            },          
+          ]
+        },        
+      ]
     }
   ])
 

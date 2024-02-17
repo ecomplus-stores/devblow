@@ -60,9 +60,9 @@ if (opt.collection_ids) {
 <% if (shelfTabs && shelfTabs.length) { %>
   <div class="shelfs-nav my-lg-5">
     <% if (opt.shelfs_title) { %>
-      <h3 class="shelfs-nav__title">
+      <h4 class="products-carousel__title">
         <%= opt.shelfs_title  %>
-      </h3>
+      </h4>
     <% } %>
     <ul class="shelfs-nav__tabs">
       <% for (let i = 0; i < shelfTabs.length; i++) { %>
@@ -74,7 +74,7 @@ if (opt.collection_ids) {
     <% for (let i = 0; i < shelfTabs.length; i++) { %>
       <div class="collection-shelf" data-shelf="<%= i %>"
         style="display: <%= i === 0 ? 'block' : 'none' %>">
-        <%- await include('@/sections/inc/products-carousel', {
+        <%- await include('@/sections/inc/products-carousel-one', {
           _, opt: {
             items: shelfTabs[i].items,
             collection: null,
