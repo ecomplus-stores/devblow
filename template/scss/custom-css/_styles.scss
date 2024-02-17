@@ -1450,3 +1450,11 @@ body {
         }
     }
 }
+
+.products-carousel[data-collection-id="65cfffa287ab487fbfbb4c4c"] .glide__track {
+    @media(min-width: 990px) {
+        align-items: stretch;
+        display: flex;
+        justify-content: center;
+    }
+}
