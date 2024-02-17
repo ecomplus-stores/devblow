@@ -142,7 +142,7 @@
   >
     Selecione uma opção antes de comprar
   </a-alert>
-  <template v-if="body.price && body.available && body.visible && isInStock">
+  <template v-if="body.price && isInStock">
     <div
           @click="buy"
           class="product-card__buy fade"
