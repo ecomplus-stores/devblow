@@ -1,5 +1,7 @@
 // Add your custom JavaScript for storefront pages here.
 import EcomSearch from '@ecomplus/search-engine'
+import { isMobile } from '@ecomplus/storefront-twbs'
+
 if (storefront && storefront.context && storefront.context.resource === 'products') {
   ecomCart.on('addItem', (data) => { 
     window.location = '/app/#/cart/'
@@ -69,7 +71,7 @@ toggleButton.addEventListener('click', () => {
 });
 
 setInterval(() => {
-  if ($('#mgnr_search-trigger.collapsed') && $('#mgnr_search-trigger.collapsed').length && !document.getElementById('search-bar').classList.contains('show')) {
+  if ($('#mgnr_search-trigger.collapsed') && $('#mgnr_search-trigger.collapsed').length && !document.getElementById('search-bar').classList.contains('show') && !isMobile) {
     document.getElementById('search-bar').classList.add('show')
   }
   $('#mgnr_search-trigger.collapsed')
