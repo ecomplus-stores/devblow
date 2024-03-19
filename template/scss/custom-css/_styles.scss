@@ -1458,3 +1458,35 @@ body {
         justify-content: center;
     }
 }
+
+.product__prices, .product-card__prices, #cashback {
+    .prices__points {
+        display: none !important;
+    }
+}
+
+#cashback {
+    padding: 15px;
+    //width: 50%;
+    border-radius: 10px;
+    /*border-color:rgb(40, 167, 69);
+    border-width: 1px;
+    border-style: solid;*/
+    background-color:#e1ffce
+}
+#dinheiro-volta strong, .dinheiro {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(40, 167, 69);
+}
+
+#blow-coins-product {
+    background: #e1ffce;
+    color: rgb(40, 167, 69);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.product__favorite {
+    margin-top: 10px;
+}

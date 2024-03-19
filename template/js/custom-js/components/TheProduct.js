@@ -289,6 +289,7 @@ import {
     methods: {
       getVariationsGrids,
       getSpecValueByText,
+      formatMoney,
   
       setBody (data) {
         this.body = {
