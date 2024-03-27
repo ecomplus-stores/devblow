@@ -24,7 +24,10 @@
             </transition-group>
           </slot>
         </div>
-
+        <div id="cashback">
+          <div id="dinheiro-volta"><span><strong>Cashback! GANHE ATÉ </strong> <span class="dinheiro"> <strong id="changeMoney">{{ formatMoney(fixedPrice / 20) }}</strong></span> em sua próxima compra!</span></div>
+        </div>
+        
         <earn-points-progress
           class="my-3"
           :cart-subtotal="cart.subtotal"
@@ -93,6 +96,7 @@
                   :discount-option="{ value: amount.discount }"
                   :is-literal="true"
                   :is-amount-total="true"
+                  @fix-price="price => fixedPrice = price"
                 />
               </div>
             </template>
